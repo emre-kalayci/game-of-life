@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Life</title>
+    <style>
+      body {
+        background-color: #1e1e1e; /* Dunkler Hintergrund */
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      canvas {
+        background-color: #000000;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        border: 1px solid #333;
+        border-radius: 4px;
+      }
+      h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #4ade80;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Game of Life</h1>
+
+    <!-- Das Canvas-Feld. Breite und Höhe können hier angepasst werden -->
+    <canvas id="gameGrid" width="800" height="800"></canvas>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
